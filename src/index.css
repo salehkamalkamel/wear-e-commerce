@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add these to your CSS file or Tailwind configuration */
+.menu-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-open {
+  transform: translateX(0%);
+}
+
+.menu-closed {
+  transform: translateX(100%);
+}

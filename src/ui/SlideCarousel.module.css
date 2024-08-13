@@ -1,0 +1,26 @@
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollContainer {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Edge and Internet Explorer */
+.scrollContainer {
+  -ms-overflow-style: none;
+}
+
+.carouselWraper {
+  position: relative;
+}
+
+.transition-opacity {
+  transition: opacity 0.5s ease;
+}
+
+.bg-custom-active-color {
+  background-color: #f0f0f0; /* Adjust color as needed */
+}
