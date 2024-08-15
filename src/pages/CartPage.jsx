@@ -98,15 +98,15 @@ export default function CartPage() {
             <div className="flex flex-col gap-4 border-t border-custom-black-20 pt-4">
               <div className="flex justify-between text-sm text-custom-black-60">
                 <p>Subtotal</p>
-                <p>${total}</p>
+                <p>EGP{total}</p>
               </div>
               <div className="flex justify-between text-sm text-custom-black-60">
                 <p>Taxes</p>
-                <p>${Math.ceil(total * 0.125)}</p>
+                <p>EGP{Math.ceil(total * 0.125)}</p>
               </div>
               <div className="flex justify-between font-semibold text-lg text-custom-black-100">
                 <p>Total</p>
-                <p>${totalPrice(total, 0.125)}</p>
+                <p>EGP{totalPrice(total, 0.125)}</p>
               </div>
             </div>
             <button className="bg-primary text-white rounded-lg px-8 py-4 mt-6 w-full font-bold">

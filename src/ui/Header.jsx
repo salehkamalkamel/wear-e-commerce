@@ -30,7 +30,7 @@ export default function Header({
           >
             <MdOutlineShoppingCart size="1.5rem" color="#454547" />
             {cartData.length > 0 && (
-              <span className="bg-custom-red text-white font-bold text-[0.5rem] absolute bottom-0 right-[-30%] px-1 py-[2px] rounded-full flex items-center justify-center">
+              <span className="bg-red-600 text-white font-bold text-[0.5rem] absolute bottom-0 right-[-30%] px-1 py-[2px] rounded-full flex items-center justify-center">
                 {cartData.length}
               </span>
             )}
@@ -42,7 +42,7 @@ export default function Header({
           >
             <TbHeart size="1.5rem" color="#454547" />
             {wishListData.length > 0 && (
-              <span className="bg-custom-red text-white font-bold text-[0.5rem] absolute bottom-0 right-[-30%] px-1 py-[2px] rounded-full flex items-center justify-center">
+              <span className="bg-red-600 text-white font-bold text-[0.5rem] absolute bottom-0 right-[-30%] px-1 py-[2px] rounded-full flex items-center justify-center">
                 {wishListData.length}
               </span>
             )}

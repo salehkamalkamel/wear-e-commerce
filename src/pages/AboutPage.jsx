@@ -12,7 +12,7 @@ export default function AboutPage() {
         <Container>
           <div className="flex flex-col gap-12 text-center">
             <Heading as="h1">About Us</Heading>
-            <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-10 w-[50%]">
+            <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-10 w-full sm:w-[50%]">
               We are a dynamic clothing startup dedicated to delivering
               high-quality and stylish apparel. Our mission is to offer
               exceptional products and outstanding service, making fashion

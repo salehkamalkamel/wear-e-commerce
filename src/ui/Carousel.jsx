@@ -47,8 +47,8 @@ export default function Carousel({ children }) {
       <IconButton
         type="secondary"
         onClick={handleScrollLeft}
-        className={`absolute left-0 text-3xl text-white hover:scale-110 transition-opacity duration-300 ${
-          showControls ? "opacity-100" : "opacity-0"
+        className={`absolute left-0 text-3xl text-white hover:scale-110 transition-opacity opacity-100 duration-300 ${
+          showControls ? "sm:opacity-100" : "sm:opacity-0"
         }`}
         aria-label="Scroll left"
         style={{ zIndex: 1 }}
@@ -66,8 +66,8 @@ export default function Carousel({ children }) {
       <IconButton
         type="secondary"
         onClick={handleScrollRight}
-        className={`absolute right-0 text-3xl text-white hover:scale-110 transition-opacity duration-300 ${
-          showControls ? "opacity-100" : "opacity-0"
+        className={`absolute right-0 text-3xl text-white hover:scale-110 opacity-100 transition-opacity duration-300 ${
+          showControls ? "sm:opacity-100" : "sm:opacity-0"
         }`}
         aria-label="Scroll right"
         style={{ zIndex: 1 }}

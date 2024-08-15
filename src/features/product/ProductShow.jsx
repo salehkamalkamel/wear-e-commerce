@@ -87,7 +87,7 @@ export default function ProductShow() {
             <span className="text-lg">EGP</span> {product.price}
           </p>
           {product.quantity <= 5 && (
-            <p className="text-custom-red text-sm">
+            <p className="text-red-600 text-sm">
               Only {product.quantity} available
             </p>
           )}
