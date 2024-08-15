@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Heading from "../ui/Heading";
 
 export default function AboutPage() {
+  const navigate = useNavigate();
   return (
     <div>
       {/* Hero Section */}
@@ -41,7 +43,7 @@ export default function AboutPage() {
           </div>
           <div className="lg:w-1/2">
             <img
-              src="/images/about-image.jpg"
+              src="/images/about-image.webp"
               alt="Our Story"
               className="w-full rounded-lg shadow-lg"
             />
@@ -94,10 +96,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="w-full flex items-center justify-center">
-            <Button
-              type="primary"
-              onClick={() => (window.location.href = "/contact")}
-            >
+            <Button type="primary" onClick={() => navigate("/contact")}>
               Contact Us
             </Button>
           </div>

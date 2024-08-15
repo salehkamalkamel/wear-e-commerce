@@ -85,7 +85,7 @@ export default function SlideCarousel() {
                 <div className="w-28 h-28">
                   <img
                     loading="lazy"
-                    src={`/images/slide-carousel/${category.toLowerCase()}-icon.png`}
+                    src={`/images/slide-carousel/${category.toLowerCase()}-icon.webp`}
                     alt={`${category} icon`}
                   />
                 </div>

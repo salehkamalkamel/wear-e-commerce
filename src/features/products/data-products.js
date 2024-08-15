@@ -3,8 +3,8 @@ let productsData = [
   {
     id: 1,
     images: [
-      "/images/products/mens_shoes_1.png",
-      "/images/products/mens_shoes_1.png",
+      "/images/products/mens_shoes_1.webp",
+      "/images/products/mens_shoes_1.webp",
     ],
     title: "Men's Running Shoes",
     description: "Comfortable and stylish running shoes for men.",
@@ -16,7 +16,7 @@ let productsData = [
   },
   {
     id: 2,
-    images: ["/images/products/mens_shoes_2.png"],
+    images: ["/images/products/mens_shoes_2.webp"],
     title: "Men's Casual Sneakers",
     description: "Stylish sneakers perfect for everyday wear.",
     price: 69.99,
@@ -29,9 +29,9 @@ let productsData = [
   {
     id: 3,
     images: [
-      "/images/products/mens_jacket_1.png",
-      "/images/products/mens_jacket_1.png",
-      "/images/products/mens_jacket_1.png",
+      "/images/products/mens_jacket_1.webp",
+      "/images/products/mens_jacket_1.webp",
+      "/images/products/mens_jacket_1.webp",
     ],
     title: "Men's Waterproof Jacket",
     description: "Stay dry with this high-quality waterproof jacket.",
@@ -43,7 +43,7 @@ let productsData = [
   },
   {
     id: 4,
-    images: ["/images/products/mens_pants_1.png"],
+    images: ["/images/products/mens_pants_1.webp"],
     title: "Men's Slim Fit Jeans",
     description: "Modern slim fit jeans for a sleek look.",
     price: 59.99,
@@ -55,7 +55,7 @@ let productsData = [
   },
   {
     id: 5,
-    images: ["/images/products/mens_shirt_1.png"],
+    images: ["/images/products/mens_shirt_1.webp"],
     title: "Men's Button-Up Shirt",
     description: "A classic button-up shirt for formal and casual occasions.",
     price: 49.99,
@@ -68,7 +68,7 @@ let productsData = [
   // Women's Category
   {
     id: 6,
-    images: ["/images/products/womens_dress_1.png"],
+    images: ["/images/products/womens_dress_1.webp"],
     title: "Women's Summer Dress",
     description: "Lightweight and breezy summer dress for women.",
     price: 89.99,
@@ -79,7 +79,7 @@ let productsData = [
   },
   {
     id: 7,
-    images: ["/images/products/womens_sandals_1.png"],
+    images: ["/images/products/womens_sandals_1.webp"],
     title: "Women's Casual Sandals",
     description: "Comfortable sandals for everyday use.",
     price: 39.99,
@@ -91,7 +91,7 @@ let productsData = [
   },
   {
     id: 8,
-    images: ["/images/products/womens_handbag_1.png"],
+    images: ["/images/products/womens_handbag_1.webp"],
     title: "Women's Leather Handbag",
     description: "Elegant leather handbag for women.",
     price: 129.99,
@@ -102,7 +102,7 @@ let productsData = [
   },
   {
     id: 9,
-    images: ["/images/products/womens_jacket_1.png"],
+    images: ["/images/products/womens_jacket_1.webp"],
     title: "Women's Quilted Jacket",
     description: "Stay warm with this stylish quilted jacket.",
     price: 109.99,
@@ -113,7 +113,7 @@ let productsData = [
   },
   {
     id: 10,
-    images: ["/images/products/womens_jeans_1.png"],
+    images: ["/images/products/womens_jeans_1.webp"],
     title: "Women's Skinny Jeans",
     description: "Comfortable skinny jeans for a perfect fit.",
     price: 69.99,
@@ -127,7 +127,7 @@ let productsData = [
   // Kids Category
   {
     id: 11,
-    images: ["/images/products/kids_shoes_1.png"],
+    images: ["/images/products/kids_shoes_1.webp"],
     title: "Kids' Light-Up Sneakers",
     description: "Fun and colorful sneakers that light up with every step.",
     price: 49.99,
@@ -138,7 +138,7 @@ let productsData = [
   },
   {
     id: 12,
-    images: ["/images/products/kids_jacket_1.png"],
+    images: ["/images/products/kids_jacket_1.webp"],
     title: "Kids' Rain Jacket",
     description: "Keep your child dry with this playful rain jacket.",
     price: 59.99,
@@ -149,7 +149,7 @@ let productsData = [
   },
   {
     id: 13,
-    images: ["/images/products/kids_tshirt_1.png"],
+    images: ["/images/products/kids_tshirt_1.webp"],
     title: "Kids' Graphic T-Shirt",
     description: "Cool and comfortable graphic tee for kids.",
     price: 29.99,
@@ -161,7 +161,7 @@ let productsData = [
   },
   {
     id: 14,
-    images: ["/images/products/kids_jeans_1.png"],
+    images: ["/images/products/kids_jeans_1.webp"],
     title: "Kids' Denim Jeans",
     description: "Durable and stylish denim jeans for kids.",
     price: 39.99,
@@ -172,7 +172,7 @@ let productsData = [
   },
   {
     id: 15,
-    images: ["/images/products/kids_sweater_1.png"],
+    images: ["/images/products/kids_sweater_1.webp"],
     title: "Kids' Knit Sweater",
     description: "Cozy and warm knit sweater for cooler days.",
     price: 44.99,
@@ -185,7 +185,7 @@ let productsData = [
   // Sport Category
   {
     id: 16,
-    images: ["/images/products/sport_bag_1.png"],
+    images: ["/images/products/sport_bag_1.webp"],
     title: "Sports Gym Bag",
     description: "Durable gym bag with ample storage space.",
     price: 69.99,
@@ -196,7 +196,7 @@ let productsData = [
   },
   {
     id: 17,
-    images: ["/images/products/sport_shoes_1.png"],
+    images: ["/images/products/sport_shoes_1.webp"],
     title: "Running Shoes",
     description: "High-performance running shoes for athletes.",
     price: 89.99,
@@ -208,7 +208,7 @@ let productsData = [
   },
   {
     id: 18,
-    images: ["/images/products/sport_watch_1.png"],
+    images: ["/images/products/sport_watch_1.webp"],
     title: "Fitness Tracker Watch",
     description: "Track your workouts and monitor your health.",
     price: 129.99,
@@ -219,7 +219,7 @@ let productsData = [
   },
   {
     id: 19,
-    images: ["/images/products/sport_tshirt_1.png"],
+    images: ["/images/products/sport_tshirt_1.webp"],
     title: "Breathable Sports T-Shirt",
     description: "Comfortable and moisture-wicking sports t-shirt.",
     price: 34.99,
@@ -230,7 +230,7 @@ let productsData = [
   },
   {
     id: 20,
-    images: ["/images/products/sport_shorts_1.png"],
+    images: ["/images/products/sport_shorts_1.webp"],
     title: "Performance Shorts",
     description: "Lightweight shorts designed for maximum comfort.",
     price: 29.99,
@@ -243,7 +243,7 @@ let productsData = [
   // Casual Category
   {
     id: 21,
-    images: ["/images/products/casual_shoes_1.png"],
+    images: ["/images/products/casual_shoes_1.webp"],
     title: "Casual Slip-On Shoes",
     description: "Comfortable slip-on shoes for a relaxed look.",
     price: 59.99,
@@ -255,7 +255,7 @@ let productsData = [
   },
   {
     id: 22,
-    images: ["/images/products/casual_dress_1.png"],
+    images: ["/images/products/casual_dress_1.webp"],
     title: "Casual Summer Dress",
     description: "Light and airy summer dress perfect for casual outings.",
     price: 79.99,
@@ -266,7 +266,7 @@ let productsData = [
   },
   {
     id: 23,
-    images: ["/images/products/casual_shirt_1.png"],
+    images: ["/images/products/casual_shirt_1.webp"],
     title: "Casual Button-Down Shirt",
     description: "Classic button-down shirt for everyday wear.",
     price: 49.99,
@@ -277,7 +277,7 @@ let productsData = [
   },
   {
     id: 24,
-    images: ["/images/products/casual_jacket_1.png"],
+    images: ["/images/products/casual_jacket_1.webp"],
     title: "Casual Bomber Jacket",
     description: "Stylish bomber jacket for a trendy look.",
     price: 89.99,
@@ -289,7 +289,7 @@ let productsData = [
   },
   {
     id: 25,
-    images: ["/images/products/casual_jeans_1.png"],
+    images: ["/images/products/casual_jeans_1.webp"],
     title: "Casual Denim Jeans",
     description: "Comfortable denim jeans for a laid-back style.",
     price: 69.99,
@@ -302,7 +302,7 @@ let productsData = [
   // Accessories Category
   {
     id: 26,
-    images: ["/images/products/accessory_watch_1.png"],
+    images: ["/images/products/accessory_watch_1.webp"],
     title: "Luxury Watch",
     description: "Elegant watch with a sophisticated design.",
     price: 299.99,
@@ -314,7 +314,7 @@ let productsData = [
   },
   {
     id: 27,
-    images: ["/images/products/accessory_sunglasses_1.png"],
+    images: ["/images/products/accessory_sunglasses_1.webp"],
     title: "Stylish Sunglasses",
     description: "Protect your eyes in style with these sunglasses.",
     price: 129.99,
@@ -326,8 +326,8 @@ let productsData = [
   {
     id: 28,
     images: [
-      "/images/products/accessory_belt_1.png",
-      "/images/products/accessory_belt_1.png",
+      "/images/products/accessory_belt_1.webp",
+      "/images/products/accessory_belt_1.webp",
     ],
     title: "Leather Belt",
     description: "High-quality leather belt for a classic look.",
@@ -339,7 +339,7 @@ let productsData = [
   },
   {
     id: 29,
-    images: ["/images/products/accessory_hat_1.png"],
+    images: ["/images/products/accessory_hat_1.webp"],
     title: "Trendy Hat",
     description: "Add a touch of style with this trendy hat.",
     price: 34.99,
@@ -352,9 +352,9 @@ let productsData = [
   {
     id: 30,
     images: [
-      "/images/products/accessory_scarf_1.png",
+      "/images/products/accessory_scarf_1.webp",
 
-      "/images/products/accessory_scarf_1.png",
+      "/images/products/accessory_scarf_1.webp",
     ],
     title: "Wool Scarf",
     description: "Keep warm with this cozy wool scarf.",

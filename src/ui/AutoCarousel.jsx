@@ -3,10 +3,10 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 // Define default props
 const defaultSlides = [
-  "/images/home-carousel/image-1.png",
-  "/images/home-carousel/image-2.png",
-  "/images/home-carousel/image-3.png",
-  "/images/home-carousel/image-4.png",
+  "/images/home-carousel/image-1.webp",
+  "/images/home-carousel/image-2.webp",
+  "/images/home-carousel/image-3.webp",
+  "/images/home-carousel/image-4.webp",
 ];
 
 // Carousel Component
@@ -41,7 +41,7 @@ const AutoCarousel = ({
 
   return (
     <div
-      className={`${width} ${height} bg-custom-black-10 rounded-[2rem] relative overflow-hidden`}
+      className={`${width} ${height} bg-custom-black-10 sm:rounded-[2rem] relative overflow-hidden`}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
     >
