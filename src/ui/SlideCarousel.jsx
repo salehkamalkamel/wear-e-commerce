@@ -65,7 +65,7 @@ export default function SlideCarousel() {
         <IoIosArrowBack />
       </IconButton>
 
-      <div className={`${styles.carouselWrapper} relative h-auto w-auto`}>
+      <div className={` relative h-auto w-auto`}>
         <div
           ref={elementRef}
           className={`${styles.scrollContainer} grid grid-flow-col gap-2 overflow-x-auto max-w-[32rem]`}

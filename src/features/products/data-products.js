@@ -13,6 +13,7 @@ let productsData = [
     category: "Mens",
     discount: false,
     quantity: 4,
+    type: "shoes",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ let productsData = [
     discount: true,
     previousPrice: 89.99,
     quantity: 4,
+    type: "shoes",
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ let productsData = [
     category: "Mens",
     discount: false,
     quantity: 10,
+    type: "jacket",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ let productsData = [
     discount: true,
     previousPrice: 79.99,
     quantity: 25,
+    type: "pants",
   },
   {
     id: 5,
@@ -63,6 +67,7 @@ let productsData = [
     category: "Mens",
     discount: false,
     quantity: 30,
+    type: "shirt",
   },
 
   // Women's Category
@@ -76,6 +81,7 @@ let productsData = [
     category: "Womans",
     discount: false,
     quantity: 12,
+    type: "shirt",
   },
   {
     id: 7,
@@ -88,6 +94,7 @@ let productsData = [
     discount: true,
     previousPrice: 49.99,
     quantity: 18,
+    type: "shoes",
   },
   {
     id: 8,
@@ -99,6 +106,7 @@ let productsData = [
     category: "Womans",
     discount: false,
     quantity: 3,
+    type: "accessory",
   },
   {
     id: 9,
@@ -110,6 +118,7 @@ let productsData = [
     category: "Womans",
     discount: false,
     quantity: 14,
+    type: "jacket",
   },
   {
     id: 10,
@@ -122,6 +131,7 @@ let productsData = [
     discount: true,
     previousPrice: 89.99,
     quantity: 22,
+    type: "pants",
   },
 
   // Kids Category
@@ -135,6 +145,7 @@ let productsData = [
     category: "Kids",
     discount: false,
     quantity: 28,
+    type: "shoes",
   },
   {
     id: 12,
@@ -146,6 +157,7 @@ let productsData = [
     category: "Kids",
     discount: false,
     quantity: 16,
+    type: "jacket",
   },
   {
     id: 13,
@@ -158,6 +170,7 @@ let productsData = [
     discount: true,
     previousPrice: 34.99,
     quantity: 35,
+    type: "shirt",
   },
   {
     id: 14,
@@ -169,6 +182,7 @@ let productsData = [
     category: "Kids",
     discount: false,
     quantity: 27,
+    type: "pants",
   },
   {
     id: 15,
@@ -180,6 +194,7 @@ let productsData = [
     category: "Kids",
     discount: false,
     quantity: 20,
+    type: "shirt",
   },
 
   // Sport Category
@@ -193,6 +208,7 @@ let productsData = [
     category: "Sport",
     discount: false,
     quantity: 13,
+    type: "accessory",
   },
   {
     id: 17,
@@ -205,6 +221,7 @@ let productsData = [
     discount: true,
     previousPrice: 109.99,
     quantity: 11,
+    type: "shoes",
   },
   {
     id: 18,
@@ -216,6 +233,7 @@ let productsData = [
     category: "Sport",
     discount: false,
     quantity: 9,
+    type: "accessory",
   },
   {
     id: 19,
@@ -227,6 +245,7 @@ let productsData = [
     category: "Sport",
     discount: false,
     quantity: 25,
+    type: "shirt",
   },
   {
     id: 20,
@@ -238,6 +257,7 @@ let productsData = [
     category: "Sport",
     discount: false,
     quantity: 30,
+    type: "accessory",
   },
 
   // Casual Category
@@ -252,6 +272,7 @@ let productsData = [
     discount: true,
     previousPrice: 69.99,
     quantity: 17,
+    type: "shoes",
   },
   {
     id: 22,
@@ -263,6 +284,7 @@ let productsData = [
     category: "Casual",
     discount: false,
     quantity: 14,
+    type: "shirt",
   },
   {
     id: 23,
@@ -274,6 +296,7 @@ let productsData = [
     category: "Casual",
     discount: false,
     quantity: 21,
+    type: "shirt",
   },
   {
     id: 24,
@@ -286,6 +309,7 @@ let productsData = [
     discount: true,
     previousPrice: 99.99,
     quantity: 12,
+    type: "jacket",
   },
   {
     id: 25,
@@ -297,6 +321,7 @@ let productsData = [
     category: "Casual",
     discount: false,
     quantity: 18,
+    type: "pants",
   },
 
   // Accessories Category
@@ -311,6 +336,7 @@ let productsData = [
     discount: true,
     previousPrice: 349.99,
     quantity: 8,
+    type: "accessory",
   },
   {
     id: 27,
@@ -322,6 +348,7 @@ let productsData = [
     category: "Classic",
     discount: false,
     quantity: 15,
+    type: "accessory",
   },
   {
     id: 28,
@@ -336,6 +363,7 @@ let productsData = [
     category: "Classic",
     discount: false,
     quantity: 20,
+    type: "accessory",
   },
   {
     id: 29,
@@ -348,6 +376,7 @@ let productsData = [
     discount: true,
     previousPrice: 39.99,
     quantity: 22,
+    type: "accessory",
   },
   {
     id: 30,
@@ -363,6 +392,7 @@ let productsData = [
     category: "Classic",
     discount: false,
     quantity: 10,
+    type: "shirt",
   },
 ];
 

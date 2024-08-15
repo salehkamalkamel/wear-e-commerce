@@ -8,7 +8,7 @@ import { useCartContext } from "../../utils/cartUtils";
 import { useProductContext } from "../../contexts/ProductContext";
 import { useWishListContext } from "../../contexts/WishListContext";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, size = "lg" }) {
   const {
     quantity,
     images,
@@ -52,47 +52,54 @@ export default function ProductCard({ product }) {
 
   const isDisabled = quantity === 0;
 
+  // Define card sizes
+  const sizeClasses = {
+    sm: "w-48 h-80 p-4",
+    md: "w-64 h-auto p-4",
+    lg: "w-80 h-112 p-6",
+  };
+
   return (
     <div
-      className={`bg-white hover:bg-gray-50 rounded-2xl flex flex-col w-full max-w-xs p-6 shadow-md ${
-        isDisabled ? "opacity-80 cursor-not-allowed" : ""
+      className={`bg-white hover:bg-gray-50 rounded-2xl cursor-pointer flex flex-col ${
+        sizeClasses[size] || sizeClasses.lg
+      } shadow-lg transition-transform transform hover:scale-[1.02] ${
+        isDisabled ? "opacity-70 cursor-not-allowed" : ""
       }`}
       onClick={handleCardClick}
     >
-      <div className="relative w-full h-60 mb-4">
+      <div className="relative w-full h-52 mb-4 overflow-hidden rounded-lg">
         <img
           src={images[0]}
           loading="lazy"
           alt={`Image of ${title}`}
-          className="object-cover w-full h-full rounded-xl"
+          className="object-cover w-full h-full"
         />
         {quantity <= 5 && quantity > 0 && (
-          <p className="absolute top-2 left-2 bg-custom-red text-white text-xs px-2 py-1 rounded-full">
+          <p className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">
             Only {quantity} left
           </p>
         )}
         {isDisabled && (
-          <p className="absolute top-2 right-2 bg-custom-red text-white text-xs px-2 py-1 rounded-full">
+          <p className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">
             Out of stock
           </p>
         )}
       </div>
-      <div className="flex flex-col gap-2">
-        <p className="text-custom-black-100 font-semibold text-lg">{title}</p>
-        <p className="text-custom-black-80 text-sm truncate max-w-full">
-          {description}
-        </p>
-        <p className="text-custom-white font-semibold text-xs py-1 px-2 rounded-full bg-custom-green w-fit">
+      <div className="flex flex-col gap-2 flex-grow">
+        <p className="text-gray-900 font-semibold text-lg">{title}</p>
+        <p className="text-gray-700 text-sm truncate">{description}</p>
+        <p className="text-white font-semibold text-xs py-1 px-2 rounded-full bg-green-600 w-fit">
           {category}
         </p>
         <p
           className={`font-bold text-xl ${
-            discount ? "text-custom-red" : "text-custom-black-100"
+            discount ? "text-red-600" : "text-gray-900"
           }`}
         >
           <span className="text-base">EGP</span> {price}
           {discount && (
-            <span className="text-sm text-custom-red px-2 line-through">
+            <span className="text-sm text-red-600 px-2 line-through">
               {previousPrice}
             </span>
           )}
