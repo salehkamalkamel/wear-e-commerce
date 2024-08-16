@@ -30,7 +30,7 @@ export default function WishListItem({ item }) {
         </p>
       </div>
       <div className="flex-shrink-0 text-lg font-bold text-custom-black-100">
-        ${price}
+        EGP {price}
       </div>
       <div className="flex-shrink-0">
         <Button

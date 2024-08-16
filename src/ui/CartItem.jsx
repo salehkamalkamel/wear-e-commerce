@@ -48,7 +48,7 @@ export default function CartItem({ item, count }) {
         <p className="text-lg font-semibold text-gray-900">{title}</p>
       </div>
       <div className="flex items-center justify-center">
-        <p className="text-lg font-semibold text-gray-900">${price}</p>
+        <p className="text-lg font-semibold text-gray-900">EGP {price}</p>
       </div>
       <div className="flex items-center justify-center gap-2">
         <IconButton size="sm" onClick={handleDec}>
