@@ -6,6 +6,7 @@ import { CartProvider } from "./utils/cartUtils.jsx";
 import { ProductProvider } from "./contexts/ProductContext.jsx";
 import { WishListProvider } from "./contexts/WishListContext.jsx";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             }}
           />
           <App />
+          <Analytics />
         </ProductProvider>
       </WishListProvider>
     </CartProvider>
