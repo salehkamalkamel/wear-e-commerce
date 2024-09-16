@@ -16,7 +16,7 @@ export default function WishListItem({ item }) {
   }
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 border rounded-xl bg-white shadow-md">
+    <div className="grid grid-cols-[1fr_1fr_1fr_1fr]  sm:grid-cols-[2fr_1fr_1fr_1fr] items-center text-center gap-4 p-4 border rounded-xl bg-white shadow-md">
       <div className="flex items-center gap-4 flex-1">
         <div className="h-24 w-24 flex-shrink-0">
           <img
@@ -25,23 +25,23 @@ export default function WishListItem({ item }) {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <p className="text-custom-black-100 text-lg font-bold flex-1">
+        <p className="text-custom-black-100 text-lg font-bold flex-1 hidden sm:block">
           {title}
         </p>
       </div>
-      <div className="flex-shrink-0 text-lg font-bold text-custom-black-100">
-        EGP {price}
+      <div className="flex-shrink-0 text-sm sm:text-lg font-bold text-custom-black-100">
+        {price} EGP
       </div>
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 text-">
         <Button
           size="small"
           type="secondary"
           onClick={() => navigate(`/product/${id}`)}
         >
-          See Product
+          Product
         </Button>
       </div>
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 flex  justify-center">
         <IconButton
           type="delete"
           size="sm"

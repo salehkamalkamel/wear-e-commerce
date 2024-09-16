@@ -5,7 +5,6 @@ import Container from "../../ui/Container";
 import Heading from "../../ui/Heading";
 import IconButton from "../../ui/IconButton";
 import RatingStars from "../../ui/RatingStars";
-import { useParams } from "react-router-dom";
 import { useCartContext } from "../../utils/cartUtils";
 import { useProductContext } from "../../contexts/ProductContext";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -14,20 +13,11 @@ import toast from "react-hot-toast";
 import Navigator from "../../ui/Navigator";
 import { useWishListContext } from "../../contexts/WishListContext";
 
-export default function ProductShow() {
+export default function ProductShow({ product }) {
   const [count, setCount] = useState(1);
-  const { productId } = useParams();
   const { add } = useCartContext();
-  const { removeProduct, products } = useProductContext();
-  const product = products.find(
-    (product) => product.id === parseInt(productId, 10)
-  );
+  const { removeProduct } = useProductContext();
   const { addToWishList, wishListData } = useWishListContext();
-
-  if (!product) {
-    return <p className="text-center text-red-500">Product not found</p>;
-  }
-
   const handleAddToWishList = () => {
     if (!wishListData.includes(product)) {
       addToWishList(product);
@@ -42,7 +32,7 @@ export default function ProductShow() {
       toast.error("Product is out of stock");
       return;
     }
-    removeProduct(+productId, count);
+    removeProduct(product.id, count);
     add(product, count);
     setCount(1);
     toast.success(`${count} product(s) added to your cart`);

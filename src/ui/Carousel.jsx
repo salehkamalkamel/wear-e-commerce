@@ -8,12 +8,14 @@ export default function Carousel({ children }) {
   const [itemWidth, setItemWidth] = useState(0);
   const [showControls, setShowControls] = useState(false);
 
+  // Updates the item width whenever the component mounts or resizes
   useEffect(() => {
     const updateItemWidth = () => {
       if (elementRef.current) {
         const firstItem = elementRef.current.firstElementChild;
         if (firstItem) {
-          setItemWidth(firstItem.clientWidth);
+          const calculatedWidth = firstItem.getBoundingClientRect().width;
+          setItemWidth(calculatedWidth);
         }
       }
     };
@@ -28,13 +30,19 @@ export default function Carousel({ children }) {
 
   const handleScrollRight = () => {
     if (elementRef.current) {
-      elementRef.current.scrollBy({ left: itemWidth, behavior: "smooth" });
+      elementRef.current.scrollBy({
+        left: itemWidth,
+        behavior: "smooth",
+      });
     }
   };
 
   const handleScrollLeft = () => {
     if (elementRef.current) {
-      elementRef.current.scrollBy({ left: -itemWidth, behavior: "smooth" });
+      elementRef.current.scrollBy({
+        left: -itemWidth,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -44,6 +52,7 @@ export default function Carousel({ children }) {
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
     >
+      {/* Left Arrow */}
       <IconButton
         type="secondary"
         onClick={handleScrollLeft}
@@ -55,7 +64,9 @@ export default function Carousel({ children }) {
       >
         <IoIosArrowBack />
       </IconButton>
-      <div className="relative w-full flex overflow-hidden">
+
+      {/* Scrollable container */}
+      <div className="relative w-full overflow-hidden">
         <div
           ref={elementRef}
           className={`${styles.scrollContainer} flex gap-4 p-6 overflow-x-auto h-max scroll-smooth`}
@@ -63,6 +74,8 @@ export default function Carousel({ children }) {
           {children}
         </div>
       </div>
+
+      {/* Right Arrow */}
       <IconButton
         type="secondary"
         onClick={handleScrollRight}

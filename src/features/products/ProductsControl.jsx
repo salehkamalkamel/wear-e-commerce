@@ -1,13 +1,12 @@
 import Container from "../../ui/Container";
 import OptionsMenu from "../../ui/OptionsMenu";
 
-export default function ProductsControl({ finalProducts }) {
+export default function ProductsControl({ products }) {
   return (
     <section className="bg-white py-8 border-b border-gray-300">
       <Container className="px-8 flex flex-col gap-4 md:flex-row md:justify-between items-center">
         <p className="text-gray-800 font-medium">
-          {finalProducts.length}{" "}
-          {finalProducts.length === 1 ? "Result" : "Results"}
+          {`${products.length} ${products.length === 1 ? "Result" : "Results"}`}
         </p>
         <div className="flex gap-4 items-center">
           <OptionsMenu

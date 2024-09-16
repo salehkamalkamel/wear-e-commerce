@@ -60,11 +60,11 @@ export default function CartPage() {
             </div>
 
             {/* Table Header */}
-            <div className="grid grid-cols-[2fr_1fr_1fr_1fr] font-semibold text-sm mb-4 border-b pb-2">
+            <div className="grid grid-cols-[1fr_1fr_1fr_1fr] sm:grid-cols-[2fr_1fr_1fr_1fr] font-semibold text-sm mb-4 border-b pb-2 ">
               <div className="text-center">Product</div>
               <div className="text-center">Price</div>
               <div className="text-center">Count</div>
-              <div className="text-center"></div>
+              <div className="text-center">Delete</div>
             </div>
 
             {/* Cart Items */}

@@ -16,7 +16,7 @@ export default function Header({
   const { wishListData } = useWishListContext();
 
   return (
-    <header className="bg-custom-black-10 border-custom-black-20 border-b-[1px] sticky top-0 z-40">
+    <header className="bg-custom-black-10 border-custom-black-20 border-b-[1px] sticky top-0 z-50">
       <div className="h-[4rem] flex items-center justify-between max-w-[88rem] mx-auto py-4 px-8">
         <Logo alt={logoAltText} />
         <nav>

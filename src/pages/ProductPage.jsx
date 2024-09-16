@@ -1,13 +1,5 @@
-import ForYou from "../features/product/ForYou";
-import ProductShow from "../features/product/ProductShow";
-import Similar from "../features/product/Similar";
+import ProductLayout from "../features/product/ProductLayout";
 
 export default function ProductPage() {
-  return (
-    <div>
-      <ProductShow />
-      <ForYou />
-      <Similar />
-    </div>
-  );
+  return <ProductLayout />;
 }

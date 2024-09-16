@@ -36,7 +36,7 @@ export default function CartItem({ item, count }) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-4 p-4 border border-gray-300 rounded-lg bg-white">
+    <div className="grid grid-cols-[1fr_1fr_1fr_1fr] sm:grid-cols-[2fr_1fr_1fr_1fr] gap-2 sm:gap-4 p-4 border border-gray-300 rounded-lg bg-white text-center">
       <div className="flex items-center gap-4">
         <div className="flex-shrink-0 w-20 h-20">
           <img
@@ -45,10 +45,14 @@ export default function CartItem({ item, count }) {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <p className="text-lg font-semibold text-gray-900">{title}</p>
+        <p className="text-lg font-semibold text-gray-900 hidden sm:block">
+          {title}
+        </p>
       </div>
       <div className="flex items-center justify-center">
-        <p className="text-lg font-semibold text-gray-900">EGP {price}</p>
+        <p className="text-sm sm:text-lg font-semibold text-gray-900">
+          EGP {price}
+        </p>
       </div>
       <div className="flex items-center justify-center gap-2">
         <IconButton size="sm" onClick={handleDec}>
